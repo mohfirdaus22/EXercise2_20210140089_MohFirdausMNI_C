@@ -8,6 +8,9 @@ class Program
     int[] maulana = new int[109];
     int n;
     int i;
+    private int[] arr = new int[20];
+    private int cmp_count = 0; 
+    private int mov_count = 0;
 
     public void input()
         //array input
@@ -46,6 +49,24 @@ class Program
 
 
     }
-    public void
+    public void q_sort(int low, int high)
+    {
+        int mid, i, Mf;
+        if (low > high)
+            return;
+        i = low + 1;
+        Mf = high;
+
+        mid = maulana[low];
+        while (i < Mf)
+        {
+            while ((maulana[i]<=mid) && (i <=mid))
+            {
+                i++;
+                cmp_count++;
+            }
+            cmp_count++;
+        }
+    }
     
 }
