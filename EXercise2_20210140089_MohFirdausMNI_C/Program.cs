@@ -73,8 +73,14 @@ class Program
                 mov_count++;
             }
         }
-
-
+        
+        if (low < Mf)
+        {
+            swap (low, Mf);
+            mov_count++;
+        }
+        q_sort(low,Mf-1);
+        q_sort (Mf+1,high);
     }
     
 }
