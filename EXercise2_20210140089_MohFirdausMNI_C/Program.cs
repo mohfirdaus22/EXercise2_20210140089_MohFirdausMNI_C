@@ -66,7 +66,15 @@ class Program
                 cmp_count++;
             }
             cmp_count++;
+
+            if (i < Mf)
+            {
+                swap(i, Mf);
+                mov_count++;
+            }
         }
+
+
     }
     
 }
