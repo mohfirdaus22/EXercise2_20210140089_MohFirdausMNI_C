@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Specialized;
 
 namespace Exercise2;
 
@@ -34,4 +35,17 @@ class Program
             maulana[i] = Int32.Parse(s1);
         }
     }
+
+    void swap(int x, int y)
+    {
+        int temp;
+        temp = maulana[x];
+        maulana[x] = maulana[y];
+        maulana[y] = temp;
+
+
+
+    }
+    public void
+    
 }
